@@ -35,35 +35,27 @@ public class PlayerScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        body.velocity = new Vector2(movement.x * speed *Time.fixedDeltaTime, movement.y);
-        Debug.Log(movement);
+        body.velocity = new Vector2(movement.x * speed * Time.fixedDeltaTime, movement.y * speed *Time.fixedDeltaTime);
     }
     
     private void ReadMovement()
     {
+        movement = Vector3.zero;
         if (Input.GetKey(KeyCode.W))
         {
-            movement = Vector3.up;
-            Debug.Log("UP");
+            movement += Vector3.up;
         }
         else if (Input.GetKey(KeyCode.S)) 
         {
-            movement = Vector3.down;
-            Debug.Log("DOWN");
+            movement += Vector3.down;
         }
-        else if (Input.GetKey(KeyCode.A)) 
+        if (Input.GetKey(KeyCode.A)) 
         {
-            movement = Vector3.left;
-            Debug.Log("LEFT");
+            movement += Vector3.left;
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            movement = Vector3.right;
-            Debug.Log("RIGHT");
-        }
-        else
-        {
-            movement = Vector3.zero;
+            movement += Vector3.right;
         }
     }
 }

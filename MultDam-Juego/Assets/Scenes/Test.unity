@@ -182,6 +182,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9960785
       objectReference: {fileID: 0}
+    - target: {fileID: 2348656846261595552, guid: 63372be9d831a35418d79d6c88137698, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2539648246414326087, guid: 63372be9d831a35418d79d6c88137698, type: 3}
       propertyPath: m_Name
       value: Player
@@ -204,7 +208,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4440586469571516343, guid: 63372be9d831a35418d79d6c88137698, type: 3}
       propertyPath: speed
-      value: 25
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315902020240187140, guid: 63372be9d831a35418d79d6c88137698, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315902020240187140, guid: 63372be9d831a35418d79d6c88137698, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315902020240187140, guid: 63372be9d831a35418d79d6c88137698, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5315902020240187140, guid: 63372be9d831a35418d79d6c88137698, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -358,7 +378,7 @@ Transform:
   m_GameObject: {fileID: 1698898415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
