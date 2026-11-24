@@ -11,16 +11,16 @@ TagManager:
   - 
   - Water
   - UI
+  - Player
+  - PlayerColision
+  - PlayerHitbox
+  - PlayerAttack
+  - Enemy
+  - EnemyHitbox
+  - EnemyAttack
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Colision
   - 
   - 
   - 
