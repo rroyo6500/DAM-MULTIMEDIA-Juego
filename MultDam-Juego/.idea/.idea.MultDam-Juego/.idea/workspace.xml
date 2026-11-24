@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86aba36b-25d9-4a5f-89b5-29bfaf0e9464" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultDam-Juego/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultDam-Juego/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyScript.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerScript.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,61 +36,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0970483656043558E-33" />
-      <entry key="MS500" value="2.558852000929218E-7" />
-      <entry key="S2" value="0.022786502000870137" />
-      <entry key="S5" value="0.2593106505285189" />
-      <entry key="S10" value="0.70924084955454" />
-      <entry key="S30" value="1.9794113886900941" />
-      <entry key="S60" value="3.5657623750008747" />
-      <entry key="M2" value="7.328412049745055" />
-      <entry key="M5" value="20.899814998225523" />
-      <entry key="M10" value="35.60644890472829" />
-      <entry key="M15" value="45.52444573317881" />
-      <entry key="M30" value="68.33952630915326" />
-      <entry key="H1" value="95.55705319527345" />
-      <entry key="H2" value="118.47413630135446" />
-      <entry key="H4" value="133.6194153608036" />
-      <entry key="D1" value="148.68171019159593" />
-      <entry key="W1" value="151.51928033997092" />
+      <entry key="MS100" value="5.6952964612746185E-31" />
+      <entry key="MS500" value="8.935179203724147E-7" />
+      <entry key="S2" value="0.03074509340855642" />
+      <entry key="S5" value="0.24840485404954948" />
+      <entry key="S10" value="0.5051257846251473" />
+      <entry key="S30" value="1.460836039355302" />
+      <entry key="S60" value="4.7307040718692255" />
+      <entry key="M2" value="12.315746465907711" />
+      <entry key="M5" value="29.871591188302883" />
+      <entry key="M10" value="53.97920216856737" />
+      <entry key="M15" value="74.42383645686614" />
+      <entry key="M30" value="120.42750541558189" />
+      <entry key="H1" value="175.06574181443008" />
+      <entry key="H2" value="224.78368442961957" />
+      <entry key="H4" value="260.1568973834408" />
+      <entry key="D1" value="297.48254238907816" />
+      <entry key="W1" value="304.75944163007324" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000104783" />
-      <entry key="S2" value="1.0028165729480885" />
-      <entry key="S5" value="1.1718329160075336" />
-      <entry key="S10" value="1.8802921011966176" />
-      <entry key="S30" value="4.5472760241191414" />
-      <entry key="S60" value="7.317371058922364" />
-      <entry key="M2" value="12.19674800375138" />
-      <entry key="M5" value="23.693631206101948" />
-      <entry key="M10" value="33.90650008121243" />
-      <entry key="M15" value="40.79489340795343" />
-      <entry key="M30" value="56.71869411537589" />
-      <entry key="H1" value="75.17017604117598" />
-      <entry key="H2" value="90.30988087050258" />
-      <entry key="H4" value="100.16621981701137" />
-      <entry key="D1" value="109.87295390415353" />
-      <entry key="W1" value="111.69209554105025" />
+      <entry key="MS100" value="1.0000005592512842" />
+      <entry key="MS500" value="1.0561721954131893" />
+      <entry key="S2" value="1.4868405221536412" />
+      <entry key="S5" value="1.7585650450230363" />
+      <entry key="S10" value="1.963447844351324" />
+      <entry key="S30" value="2.6779008030828697" />
+      <entry key="S60" value="3.686769131710668" />
+      <entry key="M2" value="5.685012732381791" />
+      <entry key="M5" value="13.839184707639184" />
+      <entry key="M10" value="28.55790692334615" />
+      <entry key="M15" value="41.451895347275205" />
+      <entry key="M30" value="71.23301442050092" />
+      <entry key="H1" value="107.40153341215667" />
+      <entry key="H2" value="140.40554423241196" />
+      <entry key="H4" value="163.80804732142852" />
+      <entry key="D1" value="188.40266791790108" />
+      <entry key="W1" value="193.18510204088014" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0025593621169108655" />
-      <entry key="MS500" value="0.30312821278581836" />
-      <entry key="S2" value="0.7531791799097268" />
-      <entry key="S5" value="1.203840048190036" />
-      <entry key="S10" value="2.3133431028566975" />
-      <entry key="S30" value="6.206503119564438" />
-      <entry key="S60" value="10.592493696969541" />
-      <entry key="M2" value="19.29146869605279" />
-      <entry key="M5" value="44.43513533757466" />
-      <entry key="M10" value="69.40595285832283" />
-      <entry key="M15" value="86.23389605662824" />
-      <entry key="M30" value="124.99660678903179" />
-      <entry key="H1" value="170.6845058623606" />
-      <entry key="H2" value="208.75760353506192" />
-      <entry key="H4" value="233.77076060041452" />
-      <entry key="D1" value="258.55190907163967" />
-      <entry key="W1" value="263.2109748894884" />
+      <entry key="MS100" value="0.07031616063495015" />
+      <entry key="MS500" value="0.6102042466669313" />
+      <entry key="S2" value="1.282215671033255" />
+      <entry key="S5" value="1.850989630749167" />
+      <entry key="S10" value="2.356092835480121" />
+      <entry key="S30" value="4.048317637412979" />
+      <entry key="S60" value="8.322742367661279" />
+      <entry key="M2" value="17.909662599973053" />
+      <entry key="M5" value="43.6219652317405" />
+      <entry key="M10" value="82.44367069879802" />
+      <entry key="M15" value="115.78253131686891" />
+      <entry key="M30" value="191.57715040355228" />
+      <entry key="H1" value="282.4028243411111" />
+      <entry key="H2" value="365.14643881478094" />
+      <entry key="H4" value="423.93976236048985" />
+      <entry key="D1" value="485.8803447288165" />
+      <entry key="W1" value="497.94382994078677" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -100,29 +104,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to": "Unity Editor",
-    "DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider": "Unity Editor",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Unity Attach To.Attach to.executor": "Debug",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Scripts",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to&quot;: &quot;Unity Editor&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider&quot;: &quot;Unity Editor&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Unity Attach To.Attach to.executor&quot;: &quot;Debug&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Scripts&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity Attach To.Attach to">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe" />

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3005240457887984567}
   - component: {fileID: 5606916711755665791}
   - component: {fileID: 1618811913925995277}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078650338a68201478fcbbb3219ab90f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
+  damage: 1
   speed: 10
   player: {fileID: 0}
 --- !u!50 &1618811913925995277
@@ -140,7 +142,7 @@ GameObject:
   - component: {fileID: 538446349145549884}
   - component: {fileID: 8480618396222995167}
   - component: {fileID: 2201582680409911559}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1237972593141150563}
   - component: {fileID: 332515581646392599}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HitBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
