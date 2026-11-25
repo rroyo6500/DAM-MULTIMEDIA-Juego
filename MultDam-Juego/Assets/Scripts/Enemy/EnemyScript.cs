@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions;
 
 public class EnemyScript : MonoBehaviour
 {
@@ -10,12 +6,13 @@ public class EnemyScript : MonoBehaviour
     public int health = 100;
     public int damage = 1;
     
-    public float speed = 10;
+    public float speed = 125f;
     public GameObject player;
     private Rigidbody2D playerBody;
     
     private Rigidbody2D body;
     private BoxCollider2D hitbox;
+    private Rigidbody2D collision;
     
     private Animator animator;
 
@@ -25,8 +22,9 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        hitbox = transform.Find("HitBox").GetComponent<BoxCollider2D>();
-        animator = transform.Find("Sprite").GetComponent<Animator>();
+        hitbox = transform.Find("EnemyHitBox").GetComponent<BoxCollider2D>();
+        animator = transform.Find("EnemySprite").GetComponent<Animator>();
+        collision = transform.Find("EnemyCollisionBox").GetComponent<Rigidbody2D>();
 
         movement = Vector3.zero;
         
@@ -36,7 +34,7 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         ReadMovement();
+        ReadMovement();
     }
 
     private void FixedUpdate()
@@ -50,8 +48,19 @@ public class EnemyScript : MonoBehaviour
 
         if (playerBody != null)
         {
-            Vector2 vec = playerBody.position - body.position;
+            Vector2 vec = (playerBody.position - body.position).normalized;
+            
             movement = vec;
         }
     }
+
+    public void OnHit(int dmg)
+    {
+        health -= dmg;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
 }

@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class PlayerHitbox : MonoBehaviour
 {
-    
-    public GameObject self;
+
+    public float timeBetweenHits = 1f;
+
+    private float timeToNextHit;
     
     private PlayerScript playerScript;
     
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = self.GetComponent<PlayerScript>();
+        playerScript = transform.GetComponent<ObjectRef>().reference.GetComponent<PlayerScript>();
     }
 
     // Update is called once per frame
@@ -20,13 +21,31 @@ public class PlayerHitbox : MonoBehaviour
     {
         
     }
-
-    void OnTriggerStay2D(Collider2D collision)
-    {
-        EnemyScript enemyScript = collision.transform.parent.GetComponent<EnemyScript>();
-        int damage = enemyScript.damage;
-        
-        playerScript.onHit(damage);
-    }
     
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        timeToNextHit -= Time.deltaTime;
+        if (timeToNextHit <= 0)
+        {
+            timeToNextHit = timeBetweenHits;
+            
+            if (collision.gameObject.layer != LayerMask.NameToLayer("EnemyHitbox"))
+            {
+                return;
+            }
+
+            EnemyScript enemy = collision.GetComponentInParent<EnemyScript>();
+            if (enemy == null)
+            {
+                return;
+            }
+
+            playerScript.OnHit(enemy.damage);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        timeToNextHit = 0f;
+    }
 }
