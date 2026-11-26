@@ -95,7 +95,7 @@ Animator:
   m_GameObject: {fileID: 691504674780364904}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ebbdd0bca90a5074f9454fc186287302, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -394,7 +394,7 @@ Animator:
   m_GameObject: {fileID: 5036419080105390612}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a07317b9c2a4028429593aab86768d3c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -791,5 +791,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e7398f17e3124479aa164c16c316d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 10
-  zoomPerFrameOnDeleted: 0.25

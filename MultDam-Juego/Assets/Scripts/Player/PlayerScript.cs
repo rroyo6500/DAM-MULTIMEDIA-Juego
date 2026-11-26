@@ -50,6 +50,7 @@ public class PlayerScript : MonoBehaviour
         void Update()
         {
             ReadMovement();
+            UpdateAnimator();
         }
 
         private void FixedUpdate()
@@ -76,7 +77,42 @@ public class PlayerScript : MonoBehaviour
             {
                 movement += Vector3.right;
             }
+        }
         
+        private void UpdateAnimator()
+        {
+            if (movement.x != 0 || movement.y != 0)
+            {
+                animator.SetBool("movement", true);
+
+                if (movement.x > 0)
+                {
+                    animator.SetInteger("right", 1);
+                } else if (movement.x < 0)
+                {
+                    animator.SetInteger("right", -1);
+                }
+                else
+                {
+                    animator.SetInteger("right", 0);
+                }
+
+                if (movement.y > 0)
+                {
+                    animator.SetBool("up", true);
+                }
+                else
+                {
+                    animator.SetBool("up", false);
+                }
+                
+            }
+            else
+            {
+                animator.SetBool("movement", false);
+                animator.SetBool("up", false);
+                animator.SetInteger("right", 0);
+            }
         }
 
         public void GiveXp(float xp)
