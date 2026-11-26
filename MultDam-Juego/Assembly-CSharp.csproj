@@ -45,10 +45,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\ObjectRef.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Player\PowerUp.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHitbox.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHitbox.cs" />
     <Compile Include="Assets\Scripts\MouseController.cs" />
@@ -95,6 +97,8 @@
     <None Include="Assets\Sprites\Player\KnightBasic\Walk\Knight_Walk_dir4.json" />
     <None Include="Assets\Sprites\Player\KnightBasic\Idle\Knight_Idle_upRight.json" />
     <None Include="Assets\Sprites\Player\KnightBasic\Walk\Knight_Walk_dir2.json" />
+    <None Include="Assets\Sprites\Mapa\kenney_tiny-dungeon\Tilesheet.txt" />
+    <None Include="Assets\Sprites\Mapa\kenney_tiny-dungeon\License.txt" />
     <None Include="Assets\Sprites\Player\KnightBasic\Attack\Knight_Attack_dir2.json" />
     <None Include="Assets\Sprites\Player\KnightBasic\Die\Knight_Die_dir3.json" />
     <None Include="Assets\Sprites\Player\KnightBasic\Jump\Knight_Jump_dir6.json" />
