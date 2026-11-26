@@ -3,15 +3,42 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="86aba36b-25d9-4a5f-89b5-29bfaf0e9464" name="Changes" comment="" />
+    <list default="true" id="86aba36b-25d9-4a5f-89b5-29bfaf0e9464" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Camera.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultDam-Juego/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultDam-Juego/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultDam-Juego/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultDam-Juego/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHitbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyHitbox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHitbox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerHitbox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerScript.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Reference.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -19,99 +46,102 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000056630080056" />
-      <entry key="MS500" value="1.0893604172761493" />
-      <entry key="S2" value="1.6490288422754387" />
-      <entry key="S5" value="2.1873270505291327" />
-      <entry key="S10" value="2.520217288117066" />
-      <entry key="S30" value="2.8196096382011575" />
-      <entry key="S60" value="2.906931865456504" />
-      <entry key="M2" value="2.9527215676887932" />
-      <entry key="M5" value="2.9809065214300783" />
-      <entry key="M10" value="2.990422616724193" />
-      <entry key="M15" value="2.993608246156459" />
-      <entry key="M30" value="2.9968007017603187" />
-      <entry key="H1" value="2.998399494520061" />
-      <entry key="H2" value="2.9991995330410375" />
-      <entry key="H4" value="2.9995997129496406" />
-      <entry key="D1" value="2.999933278049838" />
-      <entry key="W1" value="2.9999904681105685" />
+      <entry key="MS100" value="3.725290298461911E-9" />
+      <entry key="MS500" value="0.020617311105826475" />
+      <entry key="S2" value="0.3789291416620798" />
+      <entry key="S5" value="0.6784085518215067" />
+      <entry key="S10" value="0.8637135627752586" />
+      <entry key="S30" value="4.311663133500671" />
+      <entry key="S60" value="12.320792106477711" />
+      <entry key="M2" value="23.225597716535393" />
+      <entry key="M5" value="41.12709436087186" />
+      <entry key="M10" value="62.50620576369328" />
+      <entry key="M15" value="80.78434840505444" />
+      <entry key="M30" value="118.46143914362048" />
+      <entry key="H1" value="156.96512707207194" />
+      <entry key="H2" value="215.5459361631412" />
+      <entry key="H4" value="349.0801776353861" />
+      <entry key="D1" value="791.5542794211735" />
+      <entry key="W1" value="949.696180403605" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="8.242815131203665E-12" />
-      <entry key="MS500" value="0.006070369287375387" />
-      <entry key="S2" value="0.2791282404956431" />
-      <entry key="S5" value="0.600235270115623" />
-      <entry key="S10" value="0.774748520563688" />
-      <entry key="S30" value="0.9184459114640274" />
-      <entry key="S60" value="0.9583558376010591" />
-      <entry key="M2" value="0.9789565044480062" />
-      <entry key="M5" value="0.9915288576568348" />
-      <entry key="M10" value="0.9957554206012813" />
-      <entry key="M15" value="0.9971682747868164" />
-      <entry key="M30" value="0.9985831336382646" />
-      <entry key="H1" value="0.9992913157024155" />
-      <entry key="H2" value="0.9996455950497734" />
-      <entry key="H4" value="0.9998227818217453" />
-      <entry key="D1" value="0.9999704614557294" />
-      <entry key="W1" value="0.9999957801545404" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000000018" />
+      <entry key="S2" value="1.0002075864792306" />
+      <entry key="S5" value="1.033692505202235" />
+      <entry key="S10" value="1.1936187745736166" />
+      <entry key="S30" value="2.3546302903170293" />
+      <entry key="S60" value="4.726746079128825" />
+      <entry key="M2" value="8.433734016770615" />
+      <entry key="M5" value="15.980665839738501" />
+      <entry key="M10" value="25.04671907307817" />
+      <entry key="M15" value="32.012641190149225" />
+      <entry key="M30" value="45.0447068367353" />
+      <entry key="H1" value="58.074077129654306" />
+      <entry key="H2" value="84.42722559787774" />
+      <entry key="H4" value="157.97747592729607" />
+      <entry key="D1" value="415.8341724722525" />
+      <entry key="W1" value="509.09922150199856" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.8831893945370385E-5" />
-      <entry key="MS500" value="0.14901098330215018" />
-      <entry key="S2" value="1.287164833666741" />
-      <entry key="S5" value="2.406193939492617" />
-      <entry key="S10" value="3.069708450814912" />
-      <entry key="S30" value="3.653157906989824" />
-      <entry key="S60" value="3.821446489688428" />
-      <entry key="M2" value="3.909395433385195" />
-      <entry key="M5" value="3.963433583425474" />
-      <entry key="M10" value="3.981662192129004" />
-      <entry key="M15" value="3.9877626240798483" />
-      <entry key="M30" value="3.9938752173163192" />
-      <entry key="H1" value="3.9969360832144147" />
-      <entry key="H2" value="3.998467660025675" />
-      <entry key="H4" value="3.999233734589865" />
-      <entry key="D1" value="3.999872275842778" />
-      <entry key="W1" value="3.9999817533671695" />
+      <entry key="MS100" value="0.011517728260240957" />
+      <entry key="MS500" value="0.4122576052788253" />
+      <entry key="S2" value="1.0288887371327473" />
+      <entry key="S5" value="1.4989027159449866" />
+      <entry key="S10" value="1.922693564850795" />
+      <entry key="S30" value="6.571451130534528" />
+      <entry key="S60" value="16.94232538943582" />
+      <entry key="M2" value="31.551989962273037" />
+      <entry key="M5" value="57.003634262927946" />
+      <entry key="M10" value="87.46169844713" />
+      <entry key="M15" value="112.7166365056532" />
+      <entry key="M30" value="163.44797776101157" />
+      <entry key="H1" value="215.0011362938716" />
+      <entry key="H2" value="299.9456180832943" />
+      <entry key="H4" value="507.0325583391643" />
+      <entry key="D1" value="1207.3777257234922" />
+      <entry key="W1" value="1458.7935318587868" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3MYBqxF4supkZ6IUmVlIGNaaxVh" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "WIP",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Device#class com.jetbrains.rider.plugins.unity.run.devices.UnityEditorDeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider#Unity Attach To: Attach to&quot;: &quot;Unity Editor&quot;,
+    &quot;DeviceKind#com.jetbrains.rider.plugins.unity.run.devices.UnityDevicesProvider&quot;: &quot;Unity Editor&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Unity Attach To.Attach to.executor&quot;: &quot;Debug&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Scripts&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+}</component>
+  <component name="RunManager" selected="Unity Attach To.Attach to">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\rober\Documents\Multimedia\Proyectos\DAM-MULTIMEDIA-Juego\MultDam-Juego -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\rober\Documents\Multimedia\Proyectos\DAM-MULTIMEDIA-Juego\MultDam-Juego" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\rober\Documents\DAM-Multimedia\Unity\DAM-MULTIMEDIA-Juego\MultDam-Juego -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\rober\Documents\DAM-Multimedia\Unity\DAM-MULTIMEDIA-Juego\MultDam-Juego" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
@@ -120,8 +150,8 @@
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe" />
-      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\rober\Documents\Multimedia\Proyectos\DAM-MULTIMEDIA-Juego\MultDam-Juego -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
-      <option name="WORKING_DIRECTORY" value="C:\Users\rober\Documents\Multimedia\Proyectos\DAM-MULTIMEDIA-Juego\MultDam-Juego" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\rober\Documents\DAM-Multimedia\Unity\DAM-MULTIMEDIA-Juego\MultDam-Juego -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\rober\Documents\DAM-Multimedia\Unity\DAM-MULTIMEDIA-Juego\MultDam-Juego" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
