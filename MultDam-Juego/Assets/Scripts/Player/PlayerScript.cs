@@ -87,31 +87,35 @@ public class PlayerScript : MonoBehaviour
 
                 if (movement.x > 0)
                 {
-                    animator.SetInteger("right", 1);
+                    animator.SetInteger("horizontal", 1);
                 } else if (movement.x < 0)
                 {
-                    animator.SetInteger("right", -1);
+                    animator.SetInteger("horizontal", -1);
                 }
                 else
                 {
-                    animator.SetInteger("right", 0);
+                    animator.SetInteger("horizontal", 0);
                 }
 
                 if (movement.y > 0)
                 {
-                    animator.SetBool("up", true);
+                    animator.SetInteger("vertical", 1);
+                }
+                else if (movement.y < 0)
+                {
+                    animator.SetInteger("vertical", -1);
                 }
                 else
                 {
-                    animator.SetBool("up", false);
+                    animator.SetInteger("vertical", 0);
                 }
                 
             }
             else
             {
                 animator.SetBool("movement", false);
-                animator.SetBool("up", false);
-                animator.SetInteger("right", 0);
+                animator.SetInteger("vertical", 0);
+                animator.SetInteger("horizontal", 0);
             }
         }
 
