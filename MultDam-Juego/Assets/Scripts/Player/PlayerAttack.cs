@@ -9,6 +9,8 @@ public class PlayerAttack : MonoBehaviour
     public int damage;
     public float attackSpeed;
     public float attackDuration;
+    
+    public float angleOffset = 0f;
 
     private float timeToNextAttack;
     private float duration;
@@ -17,10 +19,13 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     private PolygonCollider2D col;
     
+    private MouseController mouse;
+    
     // Start is called before the first frame update
     void Start()
     {
         PlayerScript ps = gameObject.GetComponent<ObjectRef>().reference.GetComponent<PlayerScript>();
+        mouse = ps.mouse;
         sprite = transform.Find("PlayerAttackSprite").GetComponent<SpriteRenderer>();
         anim = transform.Find("PlayerAttackSprite").GetComponent<Animator>();
         col = transform.Find("PlayerAttackBox").gameObject.GetComponent<PolygonCollider2D>();
@@ -31,7 +36,7 @@ public class PlayerAttack : MonoBehaviour
         }
         if (attackSpeed == 0)
         {
-            attackSpeed = ps.attaclSpeed;
+            attackSpeed = ps.attackSpeed;
         }
         if (attackDuration == 0)
         {
@@ -44,7 +49,19 @@ public class PlayerAttack : MonoBehaviour
 
     private void FixedUpdate()
     {
+        CheckDirection();
         Attack();
+    }
+
+    private void CheckDirection()
+    {
+        if (mouse == null) return;
+        
+        Vector2 direction = mouse.WorldMousePos - (Vector2)transform.position;
+        
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        
+        transform.rotation = Quaternion.Euler(0f, 0f, angle + angleOffset);
     }
 
     private void Attack()

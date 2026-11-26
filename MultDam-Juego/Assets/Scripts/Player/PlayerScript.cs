@@ -1,21 +1,24 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerScript : MonoBehaviour
     {
 
+        public MouseController mouse;
+        
         public int health = 100;
         public int maxHealth = 100;
         public int damage = 1;
+        
         public int level = 0;
         public int maxLevel = 10;
         public float xpPerLevel = 1f;
         public float xpDiffPerLevel = 0.25f;
-
-        private float currentXP = 0f;
+        private float currentXp = 0f;
         
         public float speed = 250f;
     
-        public float attaclSpeed = 5f;
+        public float attackSpeed = 5f;
         public float attackDuration = 1f;
     
         private Rigidbody2D body;
@@ -40,7 +43,7 @@ public class PlayerScript : MonoBehaviour
             animator = transform.Find("PlayerSprite").GetComponent<Animator>();
         
             movement = Vector3.zero;
-            timeToNextAttack = attaclSpeed;
+            timeToNextAttack = attackSpeed;
         }
 
         // Update is called once per frame
@@ -78,13 +81,13 @@ public class PlayerScript : MonoBehaviour
 
         public void GiveXp(float xp)
         {
-            currentXP += xp;
+            currentXp += xp;
 
             float requiredXp = xpPerLevel * ((xpDiffPerLevel + 1) * level + 1);
-            while (currentXP >= requiredXp && level < maxLevel)
+            while (currentXp >= requiredXp && level < maxLevel)
             {
                 level++;
-                currentXP -= requiredXp;
+                currentXp -= requiredXp;
                 requiredXp = xpPerLevel * ((xpDiffPerLevel + 1) * level + 1);
             }
         }

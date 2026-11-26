@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ea40ddbc8bbec45b08e12cd7b1bc21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouse: {fileID: 0}
   health: 100
   maxHealth: 100
   damage: 1
@@ -269,7 +270,7 @@ MonoBehaviour:
   xpPerLevel: 1
   xpDiffPerLevel: 0.25
   speed: 250
-  attaclSpeed: 5
+  attackSpeed: 5
   attackDuration: 1
 --- !u!50 &5315902020240187140
 Rigidbody2D:
@@ -626,6 +627,7 @@ MonoBehaviour:
   damage: 0
   attackSpeed: 0
   attackDuration: 0
+  angleOffset: 0
 --- !u!114 &9051313588813068242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,7 +710,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
@@ -790,3 +792,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 10
+  zoomPerFrameOnDeleted: 0.25
