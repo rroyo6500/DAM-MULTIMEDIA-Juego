@@ -5,9 +5,11 @@ public class EnemyScript : MonoBehaviour
 
     public int health = 100;
     public int damage = 1;
+    public float droppedXP = 0;
     
     public float speed = 125f;
     public GameObject player;
+    
     private Rigidbody2D playerBody;
     
     private Rigidbody2D body;
@@ -17,6 +19,7 @@ public class EnemyScript : MonoBehaviour
     private Animator animator;
 
     private Vector3 movement;
+    private Vector2 lastPlayerPos;
     
     // Start is called before the first frame update
     void Start()
@@ -48,10 +51,11 @@ public class EnemyScript : MonoBehaviour
 
         if (playerBody != null)
         {
-            Vector2 vec = (playerBody.position - body.position).normalized;
-            
-            movement = vec;
+            lastPlayerPos = playerBody.position;
         }
+        
+        Vector2 vec = (lastPlayerPos - body.position).normalized;
+        movement = vec;
     }
 
     public void OnHit(int dmg)
@@ -60,6 +64,7 @@ public class EnemyScript : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            player.GetComponent<PlayerScript>().GiveXp(droppedXP);
         }
     }
     

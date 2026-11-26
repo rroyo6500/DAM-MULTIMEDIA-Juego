@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\PlayerScript.cs" />
     <Compile Include="Assets\Scripts\ObjectRef.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyHitbox.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHitbox.cs" />

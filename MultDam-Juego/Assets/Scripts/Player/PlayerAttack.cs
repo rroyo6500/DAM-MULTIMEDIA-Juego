@@ -42,12 +42,6 @@ public class PlayerAttack : MonoBehaviour
         duration = attackDuration;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void FixedUpdate()
     {
         Attack();
@@ -79,4 +73,5 @@ public class PlayerAttack : MonoBehaviour
         }
         
     }
+    
 }

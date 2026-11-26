@@ -15,12 +15,6 @@ public class PlayerHitbox : MonoBehaviour
     {
         playerScript = transform.GetComponent<ObjectRef>().reference.GetComponent<PlayerScript>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     private void OnTriggerStay2D(Collider2D collision)
     {

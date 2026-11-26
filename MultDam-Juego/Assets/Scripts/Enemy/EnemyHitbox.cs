@@ -10,12 +10,6 @@ public class EnemyHitbox : MonoBehaviour
     {
         enemyScript = transform.GetComponent<ObjectRef>().reference.GetComponent<EnemyScript>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     void OnTriggerEnter2D(Collider2D collision)
     {
