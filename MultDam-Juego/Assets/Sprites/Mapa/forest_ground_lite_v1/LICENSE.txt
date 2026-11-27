@@ -1,0 +1,19 @@
+LICENSE: Forest Ground Lite (free sample of Forest Ground and Nature)
+Copyright (c) 2026 judgemon21
+
+You may:
+  - Use these assets in any number of games and other projects, free or commercial.
+  - Edit, recolour, resize and combine them with your own work.
+  - Share the finished game or project that contains them, including the assets as they appear inside the game files.
+
+You may not:
+  - Resell, share or redistribute the asset files themselves, in original or modified form, as an asset pack, a tileset, a template or a free download.
+  - Upload the assets to an asset marketplace, a file-sharing site or a public repository where others can download them as files.
+  - Use the assets to train or fine-tune an AI model.
+
+Credit: Credit is appreciated but not required. If you want to give it: "Tileset by judgemon21, https://judgemon21.itch.io"
+
+Rights: I keep the copyright and everything else not listed above. These assets were made from my original artwork assisted by AI image generation and then edited and
+assembled by me. They are provided as they are, without any warranty.
+
+Questions or special cases (for example, wanting to resell the files in a bigger bundle): contact me through https://judgemon21.itch.io
