@@ -123,9 +123,10 @@ public class PlayerScript : MonoBehaviour
 
         public void GiveXp(float xp)
         {
-            currentXp += xp;
+        if (GameManager.Instance != null) GameManager.Instance.SumarXP(xp);
+        currentXp += xp;
 
-            float requiredXp = xpPerLevel * ((xpDiffPerLevel + 1) * level + 1);
+        float requiredXp = xpPerLevel * ((xpDiffPerLevel + 1) * level + 1);
             while (currentXp >= requiredXp && level < maxLevel)
             {
                 level++;
@@ -140,16 +141,20 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        public void OnHit(int dmg)
+    public void OnHit(int dmg)
+    {
+        health -= dmg;
+        if (health <= 0)
         {
-            health -= dmg;
-            if (health <= 0)
+            if (playerCamera != null)
             {
-                if (playerCamera != null)
-                {
-                    playerCamera.Remove();
-                }
-                Destroy(gameObject);
+                playerCamera.Remove();
             }
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.JugadorDerrotado();
+            }
+            Destroy(gameObject);
         }
     }
+}

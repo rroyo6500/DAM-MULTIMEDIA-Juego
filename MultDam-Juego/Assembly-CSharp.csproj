@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyHitbox.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHitbox.cs" />
     <Compile Include="Assets\Scripts\Enemy\Hazard.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MouseController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyScript.cs" />
   </ItemGroup>
