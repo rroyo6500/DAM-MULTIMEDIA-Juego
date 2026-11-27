@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{AE521792-968E-477D-7EDD-E5C6B07E7883}|Assembly-CSharp.csproj|c:\\users\\125pa\\dam-multimedia-juego\\multdam-juego\\assets\\scripts\\enemy\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE521792-968E-477D-7EDD-E5C6B07E7883}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE521792-968E-477D-7EDD-E5C6B07E7883}|Assembly-CSharp.csproj|c:\\users\\125pa\\dam-multimedia-juego\\multdam-juego\\assets\\scripts\\player\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE521792-968E-477D-7EDD-E5C6B07E7883}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PowerUp.cs",
+              "DocumentMoniker": "C:\\Users\\125pa\\DAM-MULTIMEDIA-Juego\\MultDam-Juego\\Assets\\Scripts\\Player\\PowerUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PowerUp.cs",
+              "ToolTip": "C:\\Users\\125pa\\DAM-MULTIMEDIA-Juego\\MultDam-Juego\\Assets\\Scripts\\Player\\PowerUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PowerUp.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T21:02:44.523Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemySpawner.cs",
               "ToolTip": "C:\\Users\\125pa\\DAM-MULTIMEDIA-Juego\\MultDam-Juego\\Assets\\Scripts\\Enemy\\EnemySpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemySpawner.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-26T20:46:43.5Z",
               "EditorCaption": ""
