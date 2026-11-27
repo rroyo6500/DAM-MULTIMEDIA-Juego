@@ -245,6 +245,7 @@ Transform:
   - {fileID: 4061182424619763126}
   - {fileID: 1981181246920208209}
   - {fileID: 792662681315334143}
+  - {fileID: 857879358903166552}
   - {fileID: 6645520351221011915}
   - {fileID: 838574433104966164}
   m_Father: {fileID: 0}
@@ -264,14 +265,15 @@ MonoBehaviour:
   mouse: {fileID: 0}
   health: 100
   maxHealth: 100
-  damage: 1
+  damage: 25
   level: 0
-  maxLevel: 10
-  xpPerLevel: 1
-  xpDiffPerLevel: 0.25
+  maxLevel: 100
+  xpPerLevel: 50
+  xpDiffPerLevel: 0.5
   speed: 250
-  attackSpeed: 5
-  attackDuration: 1
+  attackSpeed: 2.5
+  attackDuration: 0.5
+  powerUpPrefab: {fileID: 4761881127620554381, guid: badd058ae7b0ff7438c8e98b30ef04cf, type: 3}
 --- !u!50 &5315902020240187140
 Rigidbody2D:
   serializedVersion: 4
@@ -577,6 +579,87 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49128723, y: 0.63414437}
   m_EdgeRadius: 0
+--- !u!1 &6296050754648590347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 857879358903166552}
+  - component: {fileID: 3740397712376245396}
+  - component: {fileID: 8620693929291870668}
+  m_Layer: 6
+  m_Name: InteractableBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &857879358903166552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296050754648590347}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 301922557791326956}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &3740397712376245396
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296050754648590347}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 65536
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 2147524599
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 65536
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 65536
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
+--- !u!114 &8620693929291870668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6296050754648590347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ca85a97c80be148a3a998a06a904a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScript: {fileID: 4440586469571516343}
 --- !u!1 &6404219102281269552
 GameObject:
   m_ObjectHideFlags: 0

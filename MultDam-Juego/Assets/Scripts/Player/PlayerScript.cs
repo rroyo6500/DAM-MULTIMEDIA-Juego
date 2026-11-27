@@ -20,6 +20,8 @@ public class PlayerScript : MonoBehaviour
     
         public float attackSpeed = 5f;
         public float attackDuration = 1f;
+        
+        public GameObject powerUpPrefab;
     
         private Rigidbody2D body;
         private CameraScript playerCamera;
@@ -129,6 +131,12 @@ public class PlayerScript : MonoBehaviour
                 level++;
                 currentXp -= requiredXp;
                 requiredXp = xpPerLevel * ((xpDiffPerLevel + 1) * level + 1);
+                
+                Vector2 randomDir = Random.insideUnitCircle.normalized * 5f;
+                Vector3 spawnPos = transform.position + (Vector3)randomDir;
+                
+                GameObject powerUp = Instantiate(powerUpPrefab, spawnPos, Quaternion.identity);
+                
             }
         }
 

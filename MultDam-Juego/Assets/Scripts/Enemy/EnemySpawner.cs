@@ -31,6 +31,18 @@ public class EnemySpawner : MonoBehaviour
 
         int index = Random.Range(0, enemyPrefabs.Length);
         GameObject enemy = Instantiate(enemyPrefabs[index], spawnPos, Quaternion.identity);
-        enemy.GetComponent<EnemyScript>().player = player;
+        EnemyScript enemyScript = enemy.GetComponent<EnemyScript>();
+        enemyScript.player = player;
+        
+        int playerLevel = player.GetComponent<PlayerScript>().level;
+
+        int health = (int)(enemyScript.health * ((0.1 * playerLevel) + 1));
+        float speed = (float)(enemyScript.speed * ((0.1 * playerLevel) + 1));
+        float droppedXp = (float)(enemyScript.droppedXP * ((0.25 * playerLevel) + 1));
+        
+        enemyScript.health =  health;
+        enemyScript.speed = speed;
+        enemyScript.droppedXP = droppedXp;
+
     }
 }
